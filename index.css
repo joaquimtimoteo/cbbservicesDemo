@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Merriweather&family=Montserrat&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Poppins',sans-serif;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight:700;
+    color:rgb(35,35,85);
+}
+span{
+    font-size: .9rem;
+    color: #757373;
+}
+
+h6{
+    font-size: 1.1rem;
+    color:rgb(24,24,49),
+}
+ 
+nav{
+    position: fixed;
+    width: 100%;
+    background-color:#ffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    padding: 1vw 8vw;
+    align-items: center;
+    box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.15);
+}
+nav img{
+    width: 150px;
+    cursor: pointer;
+}
+
+#navegation ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#navegation ul li {
+    display: inline; /* Coloca cada elemento em linha */
+    margin-left: 25px; /* Espaçamento entre os elementos */
+    list-style: none;
+}
+#navegation ul li a{
+    text-decoration: none;
+    color:rgb(21,21,100);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+#navegation ul li a:hover{
+    color:#FDC93C;
+}
+
+.Retirarlinhas{
+  text-decoration: none;
+  color:black;
+}
+
+#Home{
+    background-image:linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,0.7)), url("images/back.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 40px;
+}
+#Home h2{
+    color:#ffff;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    padding-top: 25px;
+}
+#btn{
+   margin-top: 30px;
+   padding-top: 20px;
+}
+
+#btn a.blue{
+    color: #ffff;
+    background: rgb(21,21,100);
+    transition: 0.3s ease;
+}
+#btn a.blue:hover{
+    color:rgb(21,21,100);
+    background: #ffff;
+}
+
+#btn a.yellow{
+    color: #ffff;
+    background: #FDC93C;
+    transition: 0.3s ease;
+}
+#btn a.yellow:hover{
+    color:rgb(21,21,100);
+    background: #ffff;
+}
+
+#Home p{
+    width: 50%;
+    color:#ffff;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+#Home a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #ffff;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.Graduate {
+    width: 28px; /* Defina a largura desejada */
+    height: 28px; /* Defina a altura desejada */
+  }
+#features{
+   padding: 5vw 8vw 0 8vw;
+   text-align: center;
+  }
+ #feature-box{
+    background-color: #ffff;
+    text-align: start;
+  }
+
+  #features h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #features p{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #features h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color:rgb(21,21,100);
+    padding: 13px 0 7px 0;
+  }
+  #features p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(70,70,87); 
+  }
+  #feature-bases {
+    display: flex;
+  }
+  
+  #feature-box {
+    display: inline-block;
+    width: 33%; /* Define a largura dos elementos para que eles ocupem 1/3 da largura total */
+    text-align: center; /* Alinha o conteúdo dos elementos ao centro */
+    margin: 0 10px; 
+    background-color:rgb(238, 238, 242); 
+    color:rgb(21,21,100);
+    padding: 0 5vw 0 5vw;
+    transition: color 0.3s;
+  }
+  #feature-box:hover {
+    color: black; /* Altera a cor do texto para aqua no efeito "hover" */
+  }
+  .Graduate {
+    margin-top: 20px;
+    width: 30px; /* Defina a largura desejada para as imagens */
+    height: 30px; /* Defina a altura desejada para as imagens */}
+
+#course{
+  padding: 8vw 8vw 0 8vw;
+  text-align: center;
+  
+}
+#course-box {
+  display: flex;
+  flex-wrap: wrap; /* Garante que os elementos se ajustem ao tamanho do container */
+  justify-content: center; /* Centraliza horizontalmente os elementos */
+  gap: 1rem; /* Espaçamento entre os elementos */
+  margin-top: 50px;
+}
+
+#course-box .courses {
+  width: 320px; /* Defina a largura desejada para cada elemento */
+  text-align: center; /* Centraliza o texto dentro do elemento */
+  background-color: #f9f9ff; /* Cor de fundo */
+  padding: 20px; /* Espaçamento interno */
+}
+
+
+#course.courses{
+  text-align: start;
+  background:hwb(240 98% 0%);
+  height: 100%;
+  
+  
+}
+#course h1,
+p{
+  text-align: center;
+}
+
+#course.courses img{
+  background-size: cover;
+  background-position: center;
+  width: 300px; /* Defina a largura desejada para as imagens */
+  height:auto; /* A altura será ajustada automaticamente para manter a proporção */
+}
+
+#course .details {
+  padding: 15px 15px 0 15px;
+}
+#course .details i {
+  color: #FDC93C;
+  font-size: .9rem;
+}
+#course .courses {
+  text-align: start;
+  background: hwb(240 98% 0%);
+  height: 100%;
+  position: relative; /* Adicione a posição relativa no elemento pai */
+}
+
+#course .courses img {
+  background-size: cover;
+  background-position: center;
+  width: 400px;
+  height: auto;
+}
+
+#course .courses .details {
+  padding: 15px 15px 0 15px;
+}
+
+#course .courses .details i {
+  color: #FDC93C;
+}
+
+#course .courses .cost {
+  background-color: rgb(74, 74, 136);
+  color: #fff;
+  line-height: 70px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  right: 15px;
+  bottom: -35px; /* Ajuste o valor para posicionar corretamente no canto inferior direito */
+}
+
+.imagem3 {
+  margin-right: 659px;
+}
+
+.details{
+  background-color: rgb(238, 238, 242);
+  width: 300px; 
+  
+}
+
+.imagem4{
+  margin-right: 659px;
+}
+.imagem5{
+  margin-top: -25px;
+  margin-right: 220px;
+}
+.imagem6{
+  margin-top: -362px;
+}
+.detalhes2{
+  width: 1000px; /* Defina o valor desejado para a largura da imagem */
+  height: auto; 
+}
+
+#registration{
+  padding: 6vw 8vw 6vw 8vw;
+  background-image: linear-gradient(rgba(99,112,168,0.5), rgba(81,91,233,0.5)),url(images/signup.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#registration.form.input::placeholder{
+  color:#757373;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+#reminder p{
+   color:#fff
+}
+#reminder h1{
+  color:#fff;
+  cursor: pointer;
+}
+#time{
+  color:#fff;
+  display: flex;
+  margin-top: 40px ;
+}
+#date{
+  text-align: center;
+  padding: 13px 33px;
+  background-color: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+  border-radius: 10px;
+  margin:0 5px 10px 5px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  font-size: 1.1rem;
+  font-weight: 600;
+
+}
+#form{
+  background-color: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+}
+#form input{
+  margin:15px 0;
+  padding: 15px 10px;
+  border:1px solid rgb(84,40,241);
+  outline: none;
+}
+.blue{
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 13px 35px;
+  background-color: #ffff;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.blue{
+  margin-top: 2000px;
+}
+.EmaIrnik{
+  margin-left:-1130px ;
+}
+#expers{
+  padding: 8vw 8vw 0 8vw;
+  text-align: center;
+}
+#expert-box{
+  display: flex;
+  flex-wrap: wrap; /* Garante que os elementos se ajustem ao tamanho do container */
+  justify-content: center; /* Centraliza horizontalmente os elementos */
+  gap: 1rem; /* Espaçamento entre os elementos */
+  margin-top: 50px;
+}
+#profile{
+  background-color: #fafaf1;
+  padding: 30px 10px;
+}
+#prof{
+  background-color: #fafaf1;
+  padding: 30px 10px;
+  width: 20%;
+}
+#pro-links{
+  margin-top: 10px;
+}
+#pro-links i{
+  padding: 10px 13px;
+  border:1px solid rgb(21,21,100);
+  cursor:pointer;
+  transition: 0.3s ease;
+}
+#pro-links i:hover{
+  color:#ffff;
+  background: rgb(21,21,100);
+}
+.coca{
+  width: 100px;
+  margin-top: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.prof{
+  margin-top: 60px;
+  color: rgb(21,21,100);
+}
+.Refriango{
+  width: 200px;
+  overflow: hidden; 
+  margin-top: 30px;
+}
+.Sonil{
+  width: 100px;
+  border-radius: 50%;
+  overflow: hidden; 
+  margin-top: 30px;
+}
+
+
+.DP{
+  width: 100px;
+  overflow: hidden; 
+  margin-top: 30px; 
+}
+
+.DIP{
+  margin-top: 85px;
+  color: rgb(21,21,100);
+}
+
+.sonic{
+  margin-top: 60px;
+  color: rgb(21,21,100);
+}
+
+.RF{
+  margin-top: 40px;
+ color: rgb(21,21,100);
+}
+
+
+
+
+.slider{
+  margin:0 auto;
+  width: 100%;
+  height: 100vh;
+}
